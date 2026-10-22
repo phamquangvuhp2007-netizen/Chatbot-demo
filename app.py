@@ -42,17 +42,16 @@ def respond_to_user(user_input: str) -> str:
                 "Bạn cho em xin Mã đơn hàng để xử lý ngay nhé!")
 
     # C. Review Summarization - Tóm tắt Đánh giá
-    if "review" in text_lower or "đánh giá" in text_lower:
-        if "baseus" in text_lower or "tai nghe" in text_lower:
-            return ("📊 **Tóm tắt Review AI cho Tai nghe Bluetooth Baseus Bowie WM02** (4.8/5 ⭐ từ 1.240 đánh giá):\n\n"
-                    "👍 **Ưu điểm nổi bật:**\n"
-                    "  + Pin trâu (4-5h nghe liên tục)\n"
-                    "  + Thiết kế nhỏ gọn, nhiều màu sắc\n"
-                    "  + Kết nối bluetooth nhanh, ổn định\n\n"
-                    "👎 **Điểm cần lưu ý:**\n"
-                    "  - Dải bass hơi mỏng\n"
-                    "  - Nút cảm ứng khá nhạy dễ bấm nhầm\n\n"
-                    "💰 **Giá hiện tại:** 289.000đ")
+    if "tai nghe" in text_lower or "baseus" in text_lower:
+        return ("📊 **Tóm tắt Review AI cho Tai nghe Bluetooth Baseus Bowie WM02** (4.8/5 ⭐ từ 1.240 đánh giá):\n\n"
+                "👍 **Ưu điểm nổi bật:**\n"
+                "  + Pin trâu (4-5h nghe liên tục)\n"
+                "  + Thiết kế nhỏ gọn, nhiều màu sắc\n"
+                "  + Kết nối bluetooth nhanh, ổn định\n\n"
+                "👎 **Điểm cần lưu ý:**\n"
+                "  - Dải bass hơi mỏng\n"
+                "  - Nút cảm ứng khá nhạy dễ bấm nhầm\n\n"
+                "💰 **Giá hiện tại:** 289.000đ")
 
     # D. Product Specs - Tra cứu thông số
     if "anessa" in text_lower or "kem chống nắng" in text_lower:
